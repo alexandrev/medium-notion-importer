@@ -1,0 +1,14 @@
+{
+    "name": "notion-example",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "@giuseppecampanelli/medium-api": "^1.0.0",
+        "@notionhq/client": "^1.0.1",
+        "dotenv": "^16.0.0",
+        "node-schedule": "^2.1.0",
+        "winston": "^3.6.0"
+    }
+}
