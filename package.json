@@ -1,9 +1,9 @@
 {
-    "name": "notion-example",
-    "type": "module",
+    "name": "medium-notion-importer",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "type": "module",
+    "description": "Medium Post Notion Importer",
+    "main": "main.js",
     "dependencies": {
         "@giuseppecampanelli/medium-api": "^1.0.0",
         "@notionhq/client": "^1.0.1",

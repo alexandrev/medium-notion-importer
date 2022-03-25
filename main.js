@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Client } from "@notionhq/client"
 import medium  from '@giuseppecampanelli/medium-api'
 import dotenv  from "dotenv"
