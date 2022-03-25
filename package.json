@@ -1,6 +1,6 @@
 {
     "name": "medium-notion-importer",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "type": "module",
     "description": "Medium Post Notion Importer",
     "main": "main.js",
