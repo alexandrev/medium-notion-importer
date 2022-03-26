@@ -11,7 +11,7 @@ const logger = winston.createLogger({
   format: winston.format.timestamp(),
   transports: [ 
     new winston.transports.Console({format: winston.format.simple()}),
-    new winston.transports.File({ filename: 'medium-notion-importer.log' }),
+    new winston.transports.File({format: winston.format.simple(),filename: 'medium-notion-importer.log' }),
   ],
 });
 
@@ -101,6 +101,6 @@ const job = schedule.scheduleJob(process.env.SCHEDULER_CRON, async function(){
 });
 
 
-logger.info("# Medium Notion Sync # - Launched")
+logger.info("# Medium Notion Sync # - Launched: "+process.env.SCHEDULER_CRON)
 
 

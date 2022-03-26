@@ -1,14 +1,5 @@
 {
-    "name": "medium-notion-importer",
-    "version": "0.1.0",
-    "type": "module",
-    "description": "Medium Post Notion Importer",
-    "main": "main.js",
-    "dependencies": {
-        "@giuseppecampanelli/medium-api": "^1.0.0",
-        "@notionhq/client": "^1.0.1",
-        "dotenv": "^16.0.0",
-        "node-schedule": "^2.1.0",
-        "winston": "^3.6.0"
-    }
+  "devDependencies": {
+    "caxa": "^2.1.0"
+  }
 }

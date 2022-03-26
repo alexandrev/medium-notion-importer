@@ -1,0 +1,29 @@
+{
+    "name": "medium-notion-importer",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Medium Post Notion Importer",
+    "scripts": {
+    "build": "caxa --input . --output '../dist/medium-notion-importer.bin' -- '{{caxa}}/node_modules/.bin/node' '{{caxa}}/main.js'",
+    "start": "node  ./main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "medium-notion-importer": "./main.js"
+    },
+    "dependencies": {
+        "@giuseppecampanelli/medium-api": "^1.0.0",
+        "@notionhq/client": "^1.0.1",
+        "dotenv": "^16.0.0",
+        "node-schedule": "^2.1.0",
+        "winston": "^3.6.0"
+    },
+    "devDependencies": {
+        "pkg": "^5.5.2"
+    },
+    "pkg": {
+        "options": ["experimental-modules"],
+        "targets": [ "node16-macos-x64","node16-linux-x64","node16-win-x64"  ],
+        "outputPath": "dist"
+      }
+}
